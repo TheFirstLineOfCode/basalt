@@ -1,0 +1,10 @@
+presenceMessage1=<presence/>
+
+presenceMessage2=<presence><show>dnd</show></presence>
+
+presenceMessage3=\
+<presence xml:lang="en">\
+	<show>dnd</show>\
+	<status>Hello, world!</status>\
+	<status xml:lang="zh">哈罗，世界！</status>\
+</presence>

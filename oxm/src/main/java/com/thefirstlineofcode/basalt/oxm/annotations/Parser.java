@@ -1,0 +1,15 @@
+package com.thefirstlineofcode.basalt.oxm.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Parser {
+	String localName();
+	String namespace() default "";
+	boolean stateless() default true;
+	Class<?> objectType();
+}

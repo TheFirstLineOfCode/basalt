@@ -1,0 +1,121 @@
+shortHeartbeatChars=\u0020\u0020
+longHeartbeatChars=\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+complexMessage=\
+<iq from = "joogle@botster.shakespeare.lit" to="juliet@capulet.com/chamber" type="result" xml:lang="en" id="search2">\
+	<command xmlns="http://jabber.org/protocol/commands" node="search" status="completed">\
+		<x xmlns="jabber:x:data" type="result">\
+			<title>Joogle Search: verona</title>\
+			<reported>\
+				<field var="name" />\
+				<field var="url"/>\
+			</reported>\
+			<item>\
+				<field var="name">\
+					<value>Comune di Verona - Benvenuti nel sito ufficiale</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.comune.verona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>benvenuto!</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.hellasverona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Universita degli Studi di Verona - Home Page!!</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.univr.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Aeroporti del Garda</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.aeroportoverona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Veronafiere - fiera di Verona</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.veronafiere.it/</value>\
+				</field>\
+			</item>\
+		</x>\
+	</command>\
+</iq>
+
+simpleMessage=\
+<iq from="dongger@chat.thefirstlineofcode.com" to="example.com" id="some-id"/>
+
+openStreamMessage=\
+<?xml version='1.0' ?><stream:stream xmlns="http://etherx.jabber.org/streams" xmlns="jabber:client" to="localhost" xml:lang="en">
+
+closeStreamMessage=\
+</stream:stream>
+				
+uncompletedMessagePart1=\
+<stream:error>\
+	<xml-not-well-formed xmlns="urn:ietf:params:xml:ns:xmpp-streams"/>\
+	<text xmlns="urn:ietf:params:xml:ns:xmpp-streams" xml:lang="en">\
+		<![CDATA[Some special application diagnostic information!]]>\
+	</tex
+
+uncompletedMessagePart2=\
+	t>\
+	<escape-your-data xmlns="application-ns"/>\
+</stream:error>
+
+anotherSimpleMessage=\
+<iq type="get" to="shakespeare.lit" id="reg1">\
+	<query xmlns="jabber:iq:register"/>\
+</iq>
+	
+firstCharBrokenMessagePart1=\
+<
+
+firstCharBrokenMessagePart2=\
+stream:features>\
+	<mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl">\
+		<mechanism>PLAIN</mechanism>\
+		<mechanism>DIGEST-MD5</mechanism>\
+	</mechanisms>\
+</stream:features>
+			
+invalidMessage=\
+<iq type="error" id="some-id">\
+	<error type="some-id">\
+		<bad-request xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>\
+		<too-many-parameters xmlns="application-ns"/>\
+</iq>
+
+oneCharMoreMessage=\
+<presence to="dongger@localhost"><show>away</show></presence><
+
+oneCharLessMessage=\
+message to="dongger@localhost/home"><body>hello, dongger</body></message>
+
+oneCharTextElementMessage=\
+<iq to="muc.localhost" id="63de19c6" type="get">\
+	<query xmlns="http://jabber.org/protocol/disco#items">\
+		<set xmlns="http://jabber.org/protocol/rsm">\
+			<max>0</max>\
+		</set>\
+	</query>\
+</iq>
+
+uncompletedMessagePart3=\
+<iq id="91315534" type="get">\
+	<query xmlns="jabber:iq:roster"/>\
+</
+
+uncompletedMessagePart4=\
+iq>

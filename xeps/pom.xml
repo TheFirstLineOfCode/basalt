@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>com.thefirstlineofcode.basalt</groupId>
+		<artifactId>com.thefirstlineofcode.basalt</artifactId>
+		<version>1.1.0-RELEASE</version>
+	</parent>
+
+	<groupId>com.thefirstlineofcode.basalt</groupId>
+	<artifactId>xeps</artifactId>
+	<packaging>pom</packaging>
+	<name>XMPP XEP Protocols</name>
+
+	<modules>
+		<module>ping</module>
+		<module>disco</module>
+		<module>rsm</module>
+		<module>muc</module>
+		<module>xdata</module>
+		<module>delay</module>
+		<module>address</module>
+		<module>oob</module>
+		<module>ibr</module>
+	</modules>
+
+</project>

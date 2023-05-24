@@ -1,0 +1,85 @@
+iqRegisterMessage1=\
+<iq type="get" to="shakespeare.lit" id="reg1">\
+	<query xmlns="jabber:iq:register"/>\
+</iq>
+
+instructions1=Choose a username and password for use with this service. Please also provide your email address.;
+iqRegisterMessage2=\
+<iq type="result" id="reg1">\
+	<query xmlns="jabber:iq:register">\
+		<instructions>${instructions1}</instructions>\
+		<username/>\
+		<password/>\
+		<email/>\
+	</query>\
+</iq>
+
+iqRegisterMessage3=\
+<iq type="result" id="reg1">\
+	<query xmlns="jabber:iq:register">\
+		<registered/>\
+		<username>juliet</username>\
+		<password>R0m30</password>\
+		<email>juliet@capulet.com</email>\
+	</query>\
+</iq>
+				
+iqRegisterMessage4=\
+<iq type="result" id="reg3" from="contests.shakespeare.lit" to="juliet@capulet.com/balcony">\
+	<query xmlns="jabber:iq:register">\
+		<instructions>To register, visit http://www.shakespeare.lit/contests.php;</instructions>\
+		<x xmlns="jabber:x:oob">\
+			<url>http://www.shakespeare.lit/contests.php</url>\
+		</x>\
+	</query>\
+</iq>
+	
+iqRegisterMessage5=\
+<iq type="result" id="reg1">\
+	<query xmlns="jabber:iq:register">\
+		<username>juliet</username>\
+		<password>R0m30</password>\
+		<email>juliet@capulet.com</email>\
+		<remove/>\
+	</query>\
+</iq>
+
+iqRegisterMessage6=\
+<iq type="result" id="reg1">\
+	<query xmlns="jabber:iq:register">\
+		<remove/>\
+	</query>\
+</iq>
+
+instructions2=Use the enclosed form to register. If your Jabber client does not support Data Forms, visit http://www.shakespeare.lit/contests.php;
+instructions3=Please provide the following information to sign up for our special contests!;
+iqRegisterMessage7=\
+<iq type="result" id="reg3" from="contests.shakespeare.lit" to="juliet@capulet.com/balcony">\
+	<query xmlns="jabber:iq:register">\
+		<instructions>${instructions2}</instructions>\
+		<x xmlns="jabber:x:data" type="form">\
+			<title>Contest Registration</title>\
+			<instructions>${instructions3}</instructions>\
+			<field type="hidden" var="form_type">\
+				<value>jabber:iq:register</value>\
+			</field>\
+			<field type="text-single" label="Given Name" var="first">\
+				<required/>\
+			</field>\
+			<field type="text-single" label="Family Name" var="last">\
+				<required/>\
+			</field>\
+			<field type="text-single" label="Email Address" var="email">\
+				<required/>\
+			</field>\
+			<field type="list-single" label="Gender" var="x-gender">\
+				<option label="Male">\
+					<value>M</value>\
+				</option>\
+				<option label="Female">\
+					<value>F</value>\
+				</option>\
+			</field>\
+		</x>\
+	</query>\
+</iq>

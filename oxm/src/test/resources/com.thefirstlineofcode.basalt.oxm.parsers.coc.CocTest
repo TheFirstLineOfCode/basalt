@@ -1,0 +1,126 @@
+xDataMessage1=\
+<iq from="romeo@montague.net/home" to="joogle@botster.shakespeare.lit" type="set" xml:lang="en" id="create2">\
+	<command xmlns="http://jabber.org/protocol/commands" node="create" sessionid="create:20040408T0128Z">\
+		<x xmlns="jabber:x:data" type="submit">\
+			<field type="hidden" var="form_type">\
+				<value>chat:bot</value>\
+			</field>\
+			<field type="text-single" var="botname">\
+				<value>The Chat Google Bot</value>\
+			</field>\
+			<field type="text-multi" var="description">\
+				<value>This bot enables you to send requests to</value>\
+				<value>Google and receive the search results right</value>\
+				<value>in your Jabber client. It&apos; really cool!</value>\
+				<value>It even supports Google News!</value>\
+			</field>\
+			<field type="boolean" var="public">\
+				<value>0</value>\
+			</field>\
+			<field type="text-private" var="password">\
+				<value>v3r0na</value>\
+			</field>\
+			<field type="list-multi" var="features">\
+				<value>news</value>\
+				<value>search</value>\
+			</field>\
+			<field type="list-single" var="maxsubs">\
+				<value>50</value>\
+			</field>\
+			<field type="jid-multi" var="invitelist">\
+				<value>juliet@capulet.com</value>\
+				<value>benvolio@montague.net</value>\
+			</field>\
+		</x>\
+	</command>\
+</iq>
+
+xDataMessage2=\
+<iq from="romeo@montague.net/home" to="joogle@botster.shakespeare.lit" type="set" xml:lang="en" id="create2">\
+	<command xmlns="http://jabber.org/protocol/commands" node="create" sessionid="create:20040408T0128Z">\
+		<x xmlns="jabber:x:data" type="submit">\
+			<field type="hidden" var="form_type">\
+				<value>chat:bot</value>\
+			</field>\
+			<field type="text-single" var="botname">\
+				<value>The Chat Google Bot</value>\
+			</field>\
+			<field type="text-multi" var="description">\
+				<value>This bot enables you to send requests to</value>\
+				<value>Google and receive the search results right</value>\
+				<value>in your Jabber client. It&apos; really cool!</value>\
+				<value>It even supports Google News!</value>\
+			</field>\
+			<field type="boolean" var="public">\
+				<value>0</value>\
+			</field>\
+			<field type="text-private" var="password">\
+				<value>v3r0na</value>\
+			</field>\
+			<field type="list-multi" var="features">\
+				<value>news</value>\
+				<value>search</value>\
+			</field>\
+			<field type="list-single" var="maxsubs">\
+				<value>50</value>\
+			</field>\
+			<field type="jid-multi" var="invitelist">\
+				<value>juliet@capulet.com</value>\
+				<value>benvolio@montague.net</value>\
+			</field>\
+		</x>\
+	</command>\
+</iq>
+
+xDataMessage3=\
+<iq from="joogle@botster.shakespeare.lit" to="juliet@capulet.com/chamber" type="result" xml:lang="en" id="search2">\
+	<command xmlns="http://jabber.org/protocol/commands" node="search" status="completed">\
+		<x xmlns="jabber:x:data" type="result">\
+			<title>Joogle Search: verona</title>\
+			<reported>\
+				<field var="name"/>\
+				<field var="url"/>\
+			</reported>\
+			<item>\
+				<field var="name">\
+					<value>Comune di Verona - Benvenuti nel sito ufficiale</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.comune.verona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>benvenuto!</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.hellasverona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Universita degli Studi di Verona - Home Page!</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.univr.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Aeroporti del Garda</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.aeroportoverona.it/</value>\
+				</field>\
+			</item>\
+			<item>\
+				<field var="name">\
+					<value>Veronafiere - fiera di Verona</value>\
+				</field>\
+				<field var="url">\
+					<value>http://www.veronafiere.it/</value>\
+				</field>\
+			</item>\
+		</x>\
+	</command>\
+</iq>

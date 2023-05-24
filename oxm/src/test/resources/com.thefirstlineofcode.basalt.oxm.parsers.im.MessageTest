@@ -1,0 +1,45 @@
+messageMessage1=\
+<message from="juliet@example.com/balcony" to="romeo@example.net" type="chat" xml:lang="en">\
+	<subject>Hi</subject>\
+	<subject xml:lang="zh">嗨！</subject>\
+	<body>Hello, world!</body>\
+	<body xml:lang="zh">哈罗，世界！</body>\
+</message>
+				
+messageMessage2=\
+<message from="juliet@example.com/balcony" to="romeo@example.net" type="chat">\
+	<subject>Hi</subject>\
+	<subject>嗨！</subject>\
+	<body>Hello, world!</body>\
+	<body>哈罗，世界！</body>\
+</message>
+
+messageMessage3=\
+<message from="juliet@capulet.lit" to="romeo@montague.net">\
+	<event xmlns="http://jabber.org/protocol/pubsub#event">\
+		<items node="http://jabber.org/protocol/mood">\
+			<item id="a475804a-0f9c-11dc-98a8-001143d5d5db">\
+				<mood xmlns="http://jabber.org/protocol/mood">\
+					<annoyed/>\
+					curse my nurse!\
+				</mood>\
+			</item>\
+		</items>\
+	</event>\
+</message>
+
+messageMessage4=\
+<message from="juliet@capulet.lit" to="romeo@montague.lit">\
+	<event xmlns="http://jabber.org/protocol/pubsub#event">\
+		<items node="urn:xmpp:avatar:metadata">\
+			<item id="111f4b3c50d7b0df729d299bc6f8e9ef9066971f">\
+				<metadata xmlns="urn:xmpp:avatar:metadata">\
+					<info bytes="12345" id="111f4b3c50d7b0df729d299bc6f8e9ef9066971f" type="image/png" width="64"/>\
+				</metadata>\
+			</item>\
+		</items>\
+	</event>\
+	<addresses xmlns="http://jabber.org/protocol/address">\
+		<address type="replyto" jid="juliet@capulet.lit/chamber"/>\
+	</addresses>\
+</message>

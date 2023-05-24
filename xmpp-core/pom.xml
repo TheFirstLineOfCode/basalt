@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+        <groupId>com.thefirstlineofcode.basalt</groupId>
+        <artifactId>com.thefirstlineofcode.basalt</artifactId>
+        <version>1.1.0-RELEASE</version>
+    </parent>
+	
+	<groupId>com.thefirstlineofcode.basalt</groupId>
+	<artifactId>basalt-xmpp-core</artifactId>
+	<name>XMPP Core Protocol</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

@@ -1,0 +1,33 @@
+errorMessage1=\
+<stream:error>\
+	<not-well-formed xmlns="urn:ietf:params:xml:ns:xmpp-streams"/>\
+	<text xmlns="urn:ietf:params:xml:ns:xmpp-streams" xml:lang="en">\
+		Some special application diagnostic information!\
+	</text>\
+	<escape-your-data xmlns="application-ns"/>\
+</stream:error>
+
+senderMessage=\
+	<test-error1 xmlns="chat.thefirstlineofcode.com/test">\
+		<text>some text</text>\
+	</test-error1>\
+	<test-error2 xmlns="chat.thefirstlineofcode.com/test">\
+		<text>some other text</text>\
+	</test-error2>
+	
+errorMessage2=\
+<message type="error" id="some-id">\
+	${senderMessage}\
+	<error type="modify">\
+		<bad-request xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>\
+		<too-many-parameters xmlns="application-ns"/>\
+	</error>\
+</message>
+				
+errorMessage3=\
+<iq type="error" id="some-id">\
+	<error type="modify">\
+		<bad-request xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>\
+		<too-many-parameters xmlns="application-ns"/>\
+	</error>\
+</iq>

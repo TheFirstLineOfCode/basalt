@@ -1,0 +1,37 @@
+noEmbeddedObjectFoundIqMessage=\
+<iq from="roger@chat.thefirstlineofcode.com" to="example.com" id="some-id"/>
+
+dataText=\
+qANQR1DBwU4DX7jmYZnncmUQB/9KuKBddzQH+tZ1ZywKK0yHKnq57kWq+RFtQdCJ\
+WpdWpR0uQsuJe7+vh3NWn59/gTc5MDlX8dS9p0ovStmNcyLhxVgmqS8ZKhsblVeu\
+IpQ0JgavABqibJolc3BKrVtVV1igKiX/N7Pi8RtY1K18toaMDhdEfhBRzO/XB0+P\
+AQhYlRjNacGcslkhXqNjK5Va4tuOAPy2n1Q8UUrHbUd0g+xJ9Bm0G0LZXyvCWyKH\
+kuNEHFQiLuCY6Iv0myq6iX6tjuHehZlFSh80b5BVV9tNLwNR5Eqz1klxMhoghJOA
+
+ibbIqMessage=\
+<iq from="romeo@montague.net/orchard" id="dsw71gj3" to="juliet@capulet.com/balcony">\
+	<data xmlns="http://jabber.org/protocol/ibb" seq="0" sid="i781hf64">\
+		${dataText}\
+	</data>\
+</iq>
+
+invalidIqMessage=\
+<iq from-to="romeo@montague.net/orchard, juliet@capulet.com/balcony" id="dsw71gj3">\
+	<data xmlns="http://jabber.org/protocol/ibb" seq="0" sid="i781hf64">\
+		${dataText}\
+	</data>\
+</iq>
+
+unsupportedStanzaTypeMessage=\
+<IQ from-to="romeo@montague.net/orchard, juliet@capulet.com/balcony" id="dsw71gj3">\
+	<data xmlns="http://jabber.org/protocol/ibb" seq="0" sid="i781hf64">\
+		${dataText}\
+	</data>\
+</IQ>
+
+invalidXmlMessage=\
+<iq from and to="romeo@montague.net/orchard, juliet@capulet.com/balcony" id="dsw71gj3">\
+	<data xmlns="http://jabber.org/protocol/ibb" seq="0" sid="i781hf64">\
+		${dataText}\
+	</data>\
+</iq>
