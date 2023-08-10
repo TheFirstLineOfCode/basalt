@@ -1,0 +1,6 @@
+## 开发者正疯狂补文档中，敬请期待... ...
+### Coming soon... ...
+
+### 如果您想了解Lithosphere IoT平台，可以先读读[Hello, Lithosphere系列教程](https://github.com/TheFirstLineOfCode/Lithosphere/blob/main/Hello_Lithosphere_Tutorials.md)
+
+### Chalk子项目有文档了，感兴趣的话可以看看。请点这里：[Chalk Project](https://github.com/TheFirstLineOfCode/chalk)
