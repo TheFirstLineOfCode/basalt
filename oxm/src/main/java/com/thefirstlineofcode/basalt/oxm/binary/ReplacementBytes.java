@@ -106,6 +106,6 @@ public class ReplacementBytes {
 	}
 	
 	public static boolean isFirstByteOfDoubleBytesNamespaceReplacementBytes(byte first) {
-		return (first & 0xff) != 0xff && (first & 0xff) > 0xf0 && (first & 0xff) < 0xfa;
+		return (first & 0xff) != 0xff && (first & 0xff) >= 0xf0 && (first & 0xff) < 0xfa;
 	}
 }
